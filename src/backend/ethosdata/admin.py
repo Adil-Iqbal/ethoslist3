@@ -2,15 +2,15 @@ from django.contrib import admin
 from models import Clip, Episode, Project
 
 class ClipAdmin(admin.ModelAdmin):
-    list_display = (id)
+    list_display = ('id')
 
 
 class EpisodeAdmin(admin.ModelAdmin):
-    list_display = (id)
+    list_display = ('id')
 
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = (id)
+    list_display = ('id', 'title', 'last_updated', 'status')
 
 
 # Register your models here.
